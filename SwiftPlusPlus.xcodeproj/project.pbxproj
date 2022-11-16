@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1255555292502D0009B7E16 /* OptionalNumeric+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1255554292502D0009B7E16 /* OptionalNumeric+.swift */; };
+		A1255557292505D5009B7E16 /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1255556292505D5009B7E16 /* Optional+.swift */; };
+		A1255559292508D6009B7E16 /* OptionalString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1255558292508D6009B7E16 /* OptionalString+.swift */; };
+		A125555B29250A0A009B7E16 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A125555A29250A0A009B7E16 /* README.md */; };
 		A17F71B42925023400BE4B4D /* SwiftPlusPlus.docc in Sources */ = {isa = PBXBuildFile; fileRef = A17F71B32925023400BE4B4D /* SwiftPlusPlus.docc */; };
 		A17F71BA2925023400BE4B4D /* SwiftPlusPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F71AF2925023400BE4B4D /* SwiftPlusPlus.framework */; };
 		A17F71BF2925023400BE4B4D /* SwiftPlusPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F71BE2925023400BE4B4D /* SwiftPlusPlusTests.swift */; };
@@ -24,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1255554292502D0009B7E16 /* OptionalNumeric+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalNumeric+.swift"; sourceTree = "<group>"; };
+		A1255556292505D5009B7E16 /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+.swift"; sourceTree = "<group>"; };
+		A1255558292508D6009B7E16 /* OptionalString+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptionalString+.swift"; sourceTree = "<group>"; };
+		A125555A29250A0A009B7E16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A17F71AF2925023400BE4B4D /* SwiftPlusPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftPlusPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17F71B22925023400BE4B4D /* SwiftPlusPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftPlusPlus.h; sourceTree = "<group>"; };
 		A17F71B32925023400BE4B4D /* SwiftPlusPlus.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftPlusPlus.docc; sourceTree = "<group>"; };
@@ -50,9 +58,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1255552292502B4009B7E16 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A1255553292502BB009B7E16 /* Optional */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		A1255553292502BB009B7E16 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				A1255554292502D0009B7E16 /* OptionalNumeric+.swift */,
+				A1255556292505D5009B7E16 /* Optional+.swift */,
+				A1255558292508D6009B7E16 /* OptionalString+.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
 		A17F71A52925023400BE4B4D = {
 			isa = PBXGroup;
 			children = (
+				A125555A29250A0A009B7E16 /* README.md */,
 				A17F71B12925023400BE4B4D /* SwiftPlusPlus */,
 				A17F71BD2925023400BE4B4D /* SwiftPlusPlusTests */,
 				A17F71B02925023400BE4B4D /* Products */,
@@ -71,6 +98,7 @@
 		A17F71B12925023400BE4B4D /* SwiftPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
+				A1255552292502B4009B7E16 /* Extentions */,
 				A17F71B22925023400BE4B4D /* SwiftPlusPlus.h */,
 				A17F71B32925023400BE4B4D /* SwiftPlusPlus.docc */,
 			);
@@ -177,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A125555B29250A0A009B7E16 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1255559292508D6009B7E16 /* OptionalString+.swift in Sources */,
+				A1255555292502D0009B7E16 /* OptionalNumeric+.swift in Sources */,
+				A1255557292505D5009B7E16 /* Optional+.swift in Sources */,
 				A17F71B42925023400BE4B4D /* SwiftPlusPlus.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +428,7 @@
 		A17F71C72925023400BE4B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZU9Z57M8B;
@@ -412,6 +445,7 @@
 		A17F71C82925023400BE4B4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8ZU9Z57M8B;
